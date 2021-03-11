@@ -4,6 +4,7 @@ class FormManager {
   constructor(form, options) {
     if (!form && !document.querySelector(form)) {
       console.error("Form: no form specified.");
+      return false;
     }
     this.form = document.querySelector(form);
 
@@ -92,7 +93,7 @@ class FormManager {
                 };
               })
               .catch(function (error) {
-                console.log(error.message);
+                console.warn("FormManager: " + error.message);
               });
           }
         });
@@ -171,11 +172,11 @@ class FormManager {
         .then((response) => response.text())
         .then((body) => {
           // fire complete event if declared
-          console.log("response: " + body);
+          console.log("FormManager: response - " + body);
         })
         .catch((error) => {
           // fire error event if declared
-          console.log(error);
+          console.warn("FormManager: " + error);
         });
     }
 
@@ -262,4 +263,3 @@ class FormManager {
 }
 
 export default FormManager;
-

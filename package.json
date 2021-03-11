@@ -1,0 +1,22 @@
+{
+  "name": "include-form-manager",
+  "version": "0.0.1",
+  "description": "",
+  "main": "include-form-manager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milanhawkins/include-form-manager.git"
+  },
+  "author": "Milan Hawkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milanhawkins/include-form-manager/issues"
+  },
+  "homepage": "https://github.com/milanhawkins/include-form-manager#readme",
+  "dependencies": {
+    "browser-image-compression": "^1.0.14"
+  }
+}
